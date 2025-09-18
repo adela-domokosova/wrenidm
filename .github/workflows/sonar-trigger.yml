@@ -25,7 +25,7 @@ jobs:
     needs: prepare
     if: needs.prepare.outputs.sonar_allowed
     name: Trigger Sonar analysis
-    uses: WrenSecurity/.github/.github/workflows/sonar-maven.yml@main
+    uses: adela-domokosova/.github/.github/workflows/sonar-maven.yml@fix-analysis-checkout
     with:
       commit_sha: ${{ github.event.workflow_run.head_sha }}
       java_version: 17

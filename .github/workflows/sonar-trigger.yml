@@ -29,7 +29,7 @@ jobs:
     with:
       commit_sha: ${{ github.event.workflow_run.head_sha }}
       java_version: 17
-      project_key: 'WrenSecurity_wrenidm'
+      project_key: 'adela-domokosova_wrenidm'
       pull_request: ${{ needs.prepare.outputs.pull_request }}
     secrets:
       sonar_token: ${{ secrets.SONAR_TOKEN }}

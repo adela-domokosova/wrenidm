@@ -17,7 +17,7 @@ permissions:
 jobs:
   prepare:
     if: github.event.workflow_run.conclusion == 'success'
-    uses: WrenSecurity/.github/.github/workflows/sonar-prepare.yml@main
+    uses: adela-domokosova/.github/.github/workflows/sonar-prepare.yml@fix-sonar-fork
     name: Prepare analysis context
     with:
       workflow_run: ${{ toJSON(github.event.workflow_run) }}

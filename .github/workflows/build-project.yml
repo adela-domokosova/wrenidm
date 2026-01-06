@@ -15,3 +15,4 @@ jobs:
     uses: WrenSecurity/.github/.github/workflows/sonar-pull-prepare.yml@main
     with:
       pull_request: ${{ toJSON(github.event.pull_request) }}
+      

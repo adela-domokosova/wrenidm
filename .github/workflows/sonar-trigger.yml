@@ -33,3 +33,4 @@ jobs:
       pull_request: ${{ needs.prepare.outputs.pull_request }}
     secrets:
       sonar_token: ${{ secrets.SONAR_TOKEN }}
+
